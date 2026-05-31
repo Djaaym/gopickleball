@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Où jouer au pickleball en France et en Belgique : carte des clubs</title>
+  <meta name="description" content="Carte interactive des lieux où jouer au pickleball en France et en Belgique : clubs, associations et complexes. Filtrez par pays et trouvez un terrain près de chez vous.">
+  <link rel="canonical" href="https://gopickleball.fr/ou-jouer/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0B5D4E">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="GoPickleball">
+  <meta property="og:title" content="Où jouer au pickleball en France et en Belgique : carte des clubs">
+  <meta property="og:description" content="Trouvez un terrain de pickleball près de chez vous grâce à notre carte interactive (France + Belgique).">
+  <meta property="og:url" content="https://gopickleball.fr/ou-jouer/">
+  <meta property="og:image" content="https://gopickleball.fr/assets/images/og-carte.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet (carte) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Données structurées -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://gopickleball.fr/" },
+          { "@type": "ListItem", "position": 2, "name": "Où jouer" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "name": "Où jouer au pickleball en France et en Belgique",
+        "description": "Carte interactive des clubs et lieux de pratique du pickleball en France et en Belgique.",
+        "url": "https://gopickleball.fr/ou-jouer/",
+        "inLanguage": "fr-FR"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="GoPickleball, retour à l'accueil">
+      <span class="ball-dot" aria-hidden="true"></span>Go<strong>Pickleball</strong>
+    </a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="/">Accueil</a></li>
+        <li class="has-sub">
+          <a class="nav-link" href="/equipement/">Équipement
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <ul class="submenu">
+            <li><a href="/equipement/raquettes-pickleball.html">Raquettes (comparatif)</a></li>
+            <li><a href="/equipement/">Guide complet de l'équipement</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="/blog/">Blog</a></li>
+        <li><a class="nav-link" href="/ou-jouer/" aria-current="page">Où jouer</a></li>
+        <li><a class="nav-link" href="/a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ball" href="/equipement/raquettes-pickleball.html">Meilleures raquettes</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="breadcrumb wrap" aria-label="Fil d'Ariane">
+  <ol>
+    <li><a href="/">Accueil</a></li>
+    <li><span aria-current="page">Où jouer</span></li>
+  </ol>
+</nav>
+
+<main>
+  <section class="wrap" style="padding-top:1.2rem">
+    <header style="max-width:52rem">
+      <span class="eyebrow">Carte interactive</span>
+      <h1 style="margin:.5rem 0 .8rem">Où jouer au pickleball en France et en Belgique</h1>
+      <p class="lead">Clubs, associations et complexes sportifs&nbsp;: explorez la carte ci-dessous pour trouver un lieu de pratique près de chez vous. Filtrez par pays, recherchez une ville et cliquez sur un marqueur pour les détails.</p>
+    </header>
+  </section>
+
+  <section class="wrap" style="margin-top:1.6rem">
+    <!-- Filtres -->
+    <div class="map-toolbar" style="display:flex;gap:.8rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem">
+      <div class="filter-chips" role="group" aria-label="Filtrer par pays" style="display:flex;gap:.5rem">
+        <button class="filter-chip" data-country="ALL" aria-pressed="true">Tous</button>
+        <button class="filter-chip" data-country="FR" aria-pressed="false">🇫🇷 France</button>
+        <button class="filter-chip" data-country="BE" aria-pressed="false">🇧🇪 Belgique</button>
+      </div>
+      <label style="flex:1;min-width:200px;position:relative">
+        <span class="sr-only">Rechercher une ville ou un club</span>
+        <input id="venueSearch" type="search" placeholder="Rechercher une ville ou un club…" autocomplete="off"
+          style="width:100%;padding:.7rem 1rem;border:1.5px solid var(--line-strong);border-radius:var(--radius-pill);font:inherit;background:var(--paper)">
+      </label>
+    </div>
+
+    <!-- Carte + liste -->
+    <div class="map-layout">
+      <aside class="map-sidebar">
+        <p id="venueCount" style="font-weight:600;color:var(--ink-soft);font-size:.9rem;margin:0 0 .8rem"></p>
+        <div id="venueList" class="venue-list"></div>
+      </aside>
+      <div id="map" style="min-height:640px" role="application" aria-label="Carte des lieux de pratique du pickleball"></div>
+    </div>
+
+    <p style="font-size:.85rem;color:var(--ink-soft);margin-top:1rem">
+      Les emplacements sont donnés à titre indicatif (coordonnées au niveau de la ville). Un lieu manque&nbsp;? Une erreur&nbsp;? <a href="/a-propos.html#contact">Signalez-le-nous</a> et nous mettrons la carte à jour.
+    </p>
+  </section>
+
+  <!-- ===== MAILLAGE / CONTENU SEO ===== -->
+  <section class="wrap narrow" style="margin-top:2.6rem">
+    <h2>Comment trouver un club de pickleball&nbsp;?</h2>
+    <p>Le pickleball se développe vite des deux côtés de la frontière. En <strong>France</strong>, il est rattaché à la Fédération Française de Tennis, et de nombreux clubs de tennis ouvrent des créneaux dédiés. En <strong>Belgique</strong>, des associations locales animent la pratique dans les salles omnisports. Beaucoup de lieux proposent des <strong>sessions découverte</strong> et prêtent le matériel&nbsp;: l'idéal pour tester avant d'<a href="/equipement/raquettes-pickleball.html">acheter votre raquette</a>.</p>
+    <p>Avant de vous déplacer, pensez à&nbsp;: vérifier les créneaux (souvent en soirée ou le week-end), confirmer si la réservation est nécessaire, et demander si le club prête des raquettes. Et si vous débutez, commencez par <a href="/blog/regles-du-pickleball.html">apprendre les règles</a> et <a href="/blog/dimensions-terrain-pickleball.html">repérer les zones du terrain</a>.</p>
+
+    <div class="callout">
+      <strong>Vous gérez un club&nbsp;?</strong> Ajoutez votre lieu gratuitement à la carte en nous écrivant via la page <a href="/a-propos.html#contact">contact</a>.
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><span class="ball-dot" aria-hidden="true"></span>Go<strong>Pickleball</strong></a>
+        <p class="footer-about">Le guide francophone du pickleball : apprendre, s'équiper et trouver où jouer en France et en Belgique.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Apprendre</h4>
+        <ul>
+          <li><a href="/blog/regles-du-pickleball.html">Règles du jeu</a></li>
+          <li><a href="/blog/histoire-du-pickleball.html">Histoire du pickleball</a></li>
+          <li><a href="/blog/dimensions-terrain-pickleball.html">Dimensions du terrain</a></li>
+          <li><a href="/blog/">Tous les articles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Équipement</h4>
+        <ul>
+          <li><a href="/equipement/raquettes-pickleball.html">Raquettes</a></li>
+          <li><a href="/equipement/">Balles &amp; chaussures</a></li>
+          <li><a href="/equipement/">Kits débutants</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>GoPickleball</h4>
+        <ul>
+          <li><a href="/ou-jouer/">Où jouer</a></li>
+          <li><a href="/a-propos.html">À propos</a></li>
+          <li><a href="/a-propos.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> GoPickleball. Tous droits réservés.</span>
+      <span>Fait avec passion pour le pickleball 🥒</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Leaflet JS puis notre script de carte -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/map.js" defer></script>
+</body>
+</html>
