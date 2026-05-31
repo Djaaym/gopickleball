@@ -31,19 +31,49 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gopickleball.fr/blog/regles-du-pickleball.html</loc>
+    <loc>https://gopickleball.fr/blog/debuter-pickleball/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/blog/regles-du-pickleball/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gopickleball.fr/blog/histoire-du-pickleball.html</loc>
+    <loc>https://gopickleball.fr/blog/dink-pickleball/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/blog/strategie-double-pickleball/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/blog/erreurs-debutant-pickleball/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/blog/pickleball-padel-tennis/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/blog/histoire-du-pickleball/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gopickleball.fr/blog/dimensions-terrain-pickleball.html</loc>
+    <loc>https://gopickleball.fr/blog/dimensions-terrain-pickleball/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -55,7 +85,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gopickleball.fr/equipement/raquettes-pickleball.html</loc>
+    <loc>https://gopickleball.fr/equipement/raquettes-pickleball/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -67,7 +97,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gopickleball.fr/a-propos.html</loc>
+    <loc>https://gopickleball.fr/a-propos/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
