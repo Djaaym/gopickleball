@@ -8,9 +8,15 @@
   </url>
   <url>
     <loc>https://gopickleball.fr/blog/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/blog/page/2/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://gopickleball.fr/blog/pickleball-fft-delegation-2026.html</loc>
@@ -86,15 +92,57 @@
   </url>
   <url>
     <loc>https://gopickleball.fr/equipement/raquettes-pickleball/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/equipement/raquettes-pickleball/joola-ben-johns-perseus/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/equipement/raquettes-pickleball/six-zero-double-black-diamond/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/equipement/raquettes-pickleball/selkirk-vanguard-power-air/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/equipement/raquettes-pickleball/crbn-trufoam-genesis/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/equipement/raquettes-pickleball/vatic-pro-prism-flash/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gopickleball.fr/equipement/chaussures-pickleball/</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/equipement/balles-pickleball/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/equipement/accessoires-pickleball/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gopickleball.fr/equipement/chaussures-pickleball/skechers-viper-court-pro-2/</loc>
