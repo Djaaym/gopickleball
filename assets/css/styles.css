@@ -440,6 +440,24 @@ tbody tr:nth-child(even){ background:var(--paper) }
 .error-page .code{ font-family:var(--font-display); font-weight:800; font-size:clamp(5rem,18vw,10rem); line-height:1; color:var(--green); letter-spacing:-.04em }
 .error-page .code span{ color:var(--coral) }
 
+/* ---------- Pagination ---------- */
+.pagination{
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  gap:.5rem; margin-top:3rem;
+}
+.pagination a, .pagination span{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:2.6rem; height:2.6rem; padding:0 .95rem;
+  border-radius:var(--radius-pill); font-family:var(--font-display); font-weight:700;
+  font-size:.95rem; border:1px solid var(--line-strong); color:var(--green);
+  background:var(--white); text-decoration:none;
+  transition:background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+}
+.pagination a:hover{ background:var(--paper-2); border-color:var(--green) }
+.pagination .current{ background:var(--green); color:#fff; border-color:var(--green); pointer-events:none }
+.pagination .disabled{ opacity:.4; pointer-events:none }
+.pagination .prev, .pagination .next{ gap:.35rem }
+
 /* ---------- Reveal animations ---------- */
 [data-reveal], .reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s var(--ease), transform .6s var(--ease) }
 [data-reveal].in, .reveal.in{ opacity:1; transform:none }

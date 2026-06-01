@@ -8,9 +8,15 @@
   </url>
   <url>
     <loc>https://gopickleball.fr/blog/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gopickleball.fr/blog/page/2/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://gopickleball.fr/blog/pickleball-fft-delegation-2026.html</loc>
