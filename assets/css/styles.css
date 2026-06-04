@@ -425,6 +425,9 @@ tbody tr:nth-child(even){ background:var(--paper) }
 @media (max-width:760px){ .footer-grid{ grid-template-columns:1fr 1fr } }
 @media (max-width:460px){ .footer-grid{ grid-template-columns:1fr } }
 .footer-about{ margin:.9rem 0 0; max-width:34ch; color:#A9C2BB; font-size:.95rem }
+.footer-cousin{ margin:.8rem 0 0; max-width:34ch; color:#A9C2BB; font-size:.95rem }
+.footer-cousin a{ color:#fff; font-weight:600; text-decoration:underline; text-underline-offset:3px; text-decoration-color:var(--ball-deep) }
+.footer-cousin a:hover{ color:var(--ball) }
 .footer-col h4{ color:#fff; font-size:.82rem; letter-spacing:.1em; text-transform:uppercase; margin-bottom:.8rem }
 .footer-col ul{ list-style:none; display:flex; flex-direction:column; gap:.5rem }
 .footer-col a{ color:#C8DAD4; font-size:.95rem }
